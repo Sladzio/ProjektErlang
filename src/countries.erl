@@ -31,10 +31,10 @@ run(CountryAttr)->
 %%Wyswietla rekord zdefiniowany przez CountryName
 display_country([H|T],CountryAttr)->
   case (H#'countries/country'.name) of
-    CountryAttr-> io:format("Code    : ~s~n"
-    "phoneCode   : ~s~n"
-    "Name: ~s~n",
-      [H#'countries/country'.code,H#'countries/country'.phoneCode,H#'countries/country'.name]);
+    CountryAttr-> io:format("Name: ~s~n"
+      "Code    : ~s~n"
+      "Phone Code   : ~s~n",
+      [H#'countries/country'.name,H#'countries/country'.code,H#'countries/country'.phoneCode]);
 
     _->display_country(T,CountryAttr)
   end;
