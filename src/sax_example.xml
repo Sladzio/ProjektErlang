@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!-- This is a comment -->
+<!-- The purpose of this file is to show how the erlsom:sax() function
+     works, and to test some of the features -->
+
+
+<i:calcAverage xmlns:i="http://www.example.org">
+    <i:argument>3</i:argument>
+    <i:argument>4</i:argument>
+    <i:argument>12</i:argument>
+    <i:argument>56 </i:argument>
+    <i:argument>21</i:argument>
+    <i:argument>123</i:argument>
+    <i:argument>17</i:argument>
+</i:calcAverage>
